@@ -12,51 +12,13 @@ widget.on("submit", () => {
         needMountMessage = "I need a mount. ";
     }
 
-    //Changes the text message based on if the install is elevated or not
-    const elevated = document.getElementById("lries6jl"); //Drop Down
-    let elevatedMessage = "My TV is not elevated. ";
-    if(elevated.options[elevated.selectedIndex].text.trim().toLowerCase().startsWith("yes")){
-        elevatedMessage = "My TV is elevated. ";
-    }
-    
-    const outlet = document.getElementById("lu7okerx"); //Drop Down W/ Conditional
-    let outletMessage = "The outlet is within 4 ft, underneath the TV. ";
-    //Conditional if outlet == No
-    let describeElectric = "";
-    let describeElectricMessage = "";
-    if (outlet.options[outlet.selectedIndex].text == "No"){
-        outletMessage = "";
-        describeElectricMessage = "The electric situation is: ";
-        describeElectric = document.getElementById("lu7op5yx").value; //Text Box
-    }
-    
-    //Optional Check Boxes
-    const otherServicesCheck = document.getElementById("lrifhpq1"); //Check Box
-    let otherServices = "";
-    if (otherServicesCheck.checked){
-        otherServices = "I am interested in additional services. \n";
-    }
-    const sameDay = document.getElementById("62ce755cf3b96"); //Check Box
-    //Conditional if sameDay is checked
-    let tvModel = "";
-    let sameDayMessage = "";
-    if(sameDay.checked){
-        tvModel = document.getElementById("lu7p0q1w").value; //Text Box
-        sameDayMessage = "Yes, I am interested in same day delivery with price match, my TV model is ";
-    }
     const specialMessage = document.getElementById("62ce755cf3b57").value; //Text Box
     
     //SMS Message
     const smsMessage = "Hi, my name is" + name + " and I would like a quote. " + 
     "I live in the " + zipCode + "zipcode. " + 
     "My TV is " + tvSize.options[tvSize.selectedIndex].text + ". " +
-    needMountMessage +
-    elevatedMessage +
-    outletMessage + 
-    describeElectricMessage +
-    describeElectric + 
-    otherServices + 
-    sameDayMessage + tvModel + ". " + "\n" +
+    needMountMessage + ". " + 
     "Additional details are: " + specialMessage; 
     
     console.log(smsMessage);
