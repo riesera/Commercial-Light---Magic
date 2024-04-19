@@ -15,10 +15,10 @@ widget.on("submit", () => {
     const specialMessage = document.getElementById("62ce755cf3b57").value; //Text Box
     
     //SMS Message
-    const smsMessage = "Hi, my name is" + name + " and I would like a quote. " + 
-    "I live in the " + zipCode + "zipcode. " + 
-    "My TV is " + tvSize.options[tvSize.selectedIndex].text + ". " +
-    needMountMessage + ". " + 
+    const smsMessage = "Hi, my name is " + name + " and I would like a quote. " + 
+    "I live in the " + zipCode + " zipcode. " + 
+    "My TV is " + tvSize.options[tvSize.selectedIndex].text.toLowerCase() + ". " +
+    needMountMessage + 
     "Additional details are: " + specialMessage; 
     
     console.log(smsMessage);
