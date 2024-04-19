@@ -23,8 +23,10 @@ widget.on("submit", () => {
     let outletMessage = "The outlet is within 4 ft, underneath the TV. ";
     //Conditional if outlet == No
     let describeElectric = "";
+    let describeElectricMessage = "";
     if (outlet.options[outlet.selectedIndex].text == "No"){
         outletMessage = "";
+        describeElectricMessage = "The electric situation is: ";
         describeElectric = document.getElementById("lu7op5yx").value; //Text Box
     }
     
@@ -40,7 +42,7 @@ widget.on("submit", () => {
     let sameDayMessage = "";
     if(sameDay.checked){
         tvModel = document.getElementById("lu7p0q1w").value; //Text Box
-        sameDayMessage = "Yes, I am interested in same day delivery with price match";
+        sameDayMessage = "Yes, I am interested in same day delivery with price match, my TV model is ";
     }
     const specialMessage = document.getElementById("62ce755cf3b57").value; //Text Box
     
@@ -51,9 +53,10 @@ widget.on("submit", () => {
     needMountMessage +
     elevatedMessage +
     outletMessage + 
+    describeElectricMessage +
     describeElectric + 
     otherServices + 
-    sameDayMessage + "My TV model is, " + tvModel + ". " + "\n" +
+    sameDayMessage + tvModel + ". " + "\n" +
     "Additional details are: " + specialMessage; 
     
     console.log(smsMessage);
