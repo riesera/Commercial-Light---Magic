@@ -4,18 +4,30 @@ widget.on("submit", () => {
     const name = document.getElementById("62ce755cf34f4").value; //Text Box
     const zipCode = document.getElementById("lsm27551").value; //Text Box
     const tvSize = document.getElementById("lriepv3l"); //Drop Down
+    
+    //Changes the text message based on if they need a mount or not
     const needMount = document.getElementById("lrif6rcb"); //Drop Down
+    let needMountMessage = "I already have a mount. ";
+    if(needMount.options[needMount.selectedIndex].text.trim().toLowerCase().startsWith("yes")){
+        needMountMessage = "I need a mount. ";
+    }
+
+    //Changes the text message based on if the install is elevated or not
     const elevated = document.getElementById("lries6jl"); //Drop Down
+    let elevatedMessage = "My TV is not elevated. ";
+    if(elevated.options[elevated.selectedIndex].text.trim().toLowerCase().startsWith("yes")){
+        elevatedMessage = "My TV is elevated. ";
+    }
+    
     const outlet = document.getElementById("lu7okerx"); //Drop Down W/ Conditional
+    let outletMessage = "The outlet is within 4 ft, underneath the TV. ";
     //Conditional if outlet == No
     let describeElectric = "";
-    let describeElectricMessage = "";
-    let newLine = "";
     if (outlet.options[outlet.selectedIndex].text == "No"){
+        outletMessage = "";
         describeElectric = document.getElementById("lu7op5yx").value; //Text Box
-        describeElectricMessage = "Electric Description: ";
-        newLine = "\n";
     }
+    
     //Optional Check Boxes
     const otherServicesCheck = document.getElementById("lrifhpq1"); //Check Box
     let otherServices = "";
@@ -28,23 +40,21 @@ widget.on("submit", () => {
     let sameDayMessage = "";
     if(sameDay.checked){
         tvModel = document.getElementById("lu7p0q1w").value; //Text Box
-        sameDayMessage = "Yes, I am interested in same day delivery with price match." +
-        "\nTV Model & Website: ";
-        newLine = "\n";
+        sameDayMessage = "Yes, I am interested in same day delivery with price match";
     }
     const specialMessage = document.getElementById("62ce755cf3b57").value; //Text Box
     
     //SMS Message
-    const smsMessage = "Hi, I would like a quote. \n" + 
-    "Name: " + name + " \n" + 
-    "Zipcode: " + zipCode + "\n" + 
-    "TV Size: " + tvSize.options[tvSize.selectedIndex].text + "\n" +
-    "Mount: " + needMount.options[needMount.selectedIndex].text + "\n" +
-    "Mounting Elevated: " + elevated.options[elevated.selectedIndex].text + "\n" +
-    "Outlet: " + outlet.options[outlet.selectedIndex].text + "\n" + 
-    describeElectricMessage + describeElectric + newLine + 
+    const smsMessage = "Hi, my name is" + name + " and I would like a quote. " + 
+    "I live in the " + zipCode + "zipcode. " + 
+    "My TV is " + tvSize.options[tvSize.selectedIndex].text + ". " +
+    needMountMessage +
+    elevatedMessage +
+    outletMessage + 
+    describeElectric + 
     otherServices + 
-    sameDayMessage + tvModel + newLine + specialMessage; 
+    sameDayMessage + "My TV model is, " + tvModel + ". " + "\n" +
+    "Additional details are: " + specialMessage; 
     
     console.log(smsMessage);
     
