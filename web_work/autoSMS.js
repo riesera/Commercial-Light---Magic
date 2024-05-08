@@ -7,19 +7,17 @@ widget.on("submit", () => {
     
     //Changes the text message based on if they need a mount or not
     const needMount = document.getElementById("lrif6rcb"); //Drop Down
-    let needMountMessage = "I already have a mount. ";
+    let needMountMessage = `I already have a mount. `;
     if(needMount.options[needMount.selectedIndex].text.trim().toLowerCase().startsWith("yes")){
-        needMountMessage = "I need a mount. ";
+        needMountMessage = `I need a mount. `;
     }
 
     const specialMessage = document.getElementById("62ce755cf3b57").value; //Text Box
     
     //SMS Message
-    const smsMessage = "Hi, my name is " + name + " and I would like a quote. " + 
-    "I live in the " + zipCode + " zipcode. " + 
-    "My TV is " + tvSize.options[tvSize.selectedIndex].text.toLowerCase() + ". " +
-    needMountMessage + 
-    "Additional details are: " + specialMessage; 
+    const smsMessage = `Hi, my name is ${name} and I would like a quote. 
+    I live in the ${zipcode} zipcode. My TV is ${tvSize.options[tvSize.selectedIndex].text.toLowerCase()}, and ${needMountMessage}.
+    Any Additional Details: ${specialMessage}`
     
     console.log(smsMessage);
     
@@ -46,9 +44,7 @@ widget.on("submit", () => {
     
         // Add a click event listener to the parent element
         element.addEventListener('click', function(event) {
-            console.log("I got here....");
             event.preventDefault();
-            console.log("I did it rawr");
             window.location.href = smsLink;
             
         });
