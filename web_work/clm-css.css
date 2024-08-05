@@ -1,0 +1,451 @@
+@font-face {
+    font-family: 'Novacento Sans Free, Novacentowide';
+
+       src: url('https://static1.squarespace.com/static/6439c48de787665ec69b7605/t/64ee12f0ea67262c2dd51e50/1693324016152/Novecentowide.otf');  
+  }
+
+h1 {
+  font-family: 'Novacento Sans Free, Novacentowide';
+  //font-size: 25px;
+  font-size: 1.5rem;
+  }
+
+h2 {font-family: 'Novacento Sans Free, Novacentowide';}
+
+h3 {font-family: 'Novacento Sans Free, Novacentowide';}
+
+.header{
+  font-family: 'Novacento Sans Free, Novacentowide';
+}
+
+.header-menu-nav-item{
+  font-family: 'Novacento Sans Free, Novacentowide';
+}
+
+.header-title-text a 
+{
+	font-family: 'Novacento Sans Free, Novacentowide';
+}
+
+@font-face {
+
+    font-family: 'SourceSans';
+
+       src: url('https://static1.squarespace.com/static/6439c48de787665ec69b7605/t/64ee12f50ad6f53440b24b95/1693324021780/SourceSans.ttf');
+
+  }
+
+h4 {font-family: 'SourceSans';
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+	}
+
+p {font-family: 'SourceSans';
+   letter-spacing: .50rem;
+   text-transform: uppercase;
+	}
+
+/*Banner Links*/
+.portfolio-grid-basic .portfolio-title{
+  font-family: 'SourceSans';
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+  /*Project names in projects*/
+.header-nav-item{
+  font-family: 'SourceSans';
+  letter-spacing: .50rem;
+  text-transform: uppercase;
+}
+  
+//.site-wrapper{
+  //font-family: 'SourceSans';
+  //letter-spacing: .125rem;
+  //text-transform: uppercase;
+//}
+
+//Carousel Font and Reviews Font 
+.list-item-content__description * {
+  font-family: 'SourceSans' !important;
+  letter-spacing: .50rem;
+  text-transform: uppercase;
+
+}
+
+//Settings for header on service widget
+.eGyUKs .eapp-photo-gallery-photo-gallery-heading{
+  font-family: 'Novacento Sans Free, Novacentowide';
+  font-size: 2.2rem;
+}
+
+//Settings for font on Service Widget Buttons
+.eapp-photo-gallery-photo-gallery-component{
+  font-family: 'SourceSans';
+  letter-spacing: .50rem;
+  text-transform: uppercase;
+}
+
+
+:root{
+  --body-font-font-family: 'SourceSans';
+  --heading-font-font-family: 'SourceSans';
+  --meta-font-font-family: 'SourceSans';
+  --header-button-font-font-family: 'SourceSans';
+  --primary-button-font-font-family: 'SourceSans';
+  --secondary-button-font-font-family: 'SourceSans';
+  --tertiary-button-font-font-family: 'SourceSans';
+  --primary-button-font-font-family: 'SourceSans';
+  --primary-button-font-text-transform: uppercase;
+  --primary-button-font-letter-spacing: .125rem;
+  --primary-button-font-font-size-value: 1.5rem;
+  --sqs-site-gutter: 0px;
+  //--sqs-mobile-site-gutter: 0px;
+  --body-font-letter-spacing: .125rem;
+ 
+}
+
+html {
+  font-family: 'SourceSans';
+}
+
+//Getting rid of extra header padding
+.header .header-announcement-bar-wrapper {
+        padding: 0vw;
+    }
+
+.list-item-content__button-wrapper {
+    //width: 100%; /* Ensure the wrapper takes up full width */
+}
+
+.list-item-content__button-container {
+    //width: 100%; /* Ensure the container takes up full width */
+}
+
+//Code to change the button width of the carousel to match image width
+.list-item-content__button {
+    //display: block;
+    //width: 100%; /* Ensure the button takes up full width */
+    //text-align: center; /* Center the button text */
+    //margin: 0 auto; /* Center the button itself if needed */
+}
+//This fixes the elfsight widget
+//extra space!!!!
+//Hide Embed Block Info Bar
+.sqs-block .sqs-blockStatus, .sqs-block .removed-script {
+  display: none!important;
+}
+
+/********Specific Media Targeting****/
+//Devices with width 400 and below
+@media (max-width: 400px) {
+  .eapp-photo-gallery-info-title {
+    font-family: 'SourceSans' !important;
+    font-size: 10px !important;
+    letter-spacing: 0.50rem !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    justify-content: center;
+
+  }
+  .sqs-block {
+    position: relative;
+    width: 100%;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    justify-content: center;
+}
+  
+  .fluid-engine .sqs-block {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0 !important;
+    padding-bottom: 0px !important;
+    justify-content: center;
+}
+  .fe-6681c2ba6573f60943b48694{
+    //--grid-gutter: 0 !important;
+    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
+    justify-content: center;
+  }
+  
+  .elfsight-app-dc92b0c3-8052-481d-923b-e1ab3ff3740e {
+        width: 100% !important;
+    	overflow: visible;
+    	justify-content: center;
+    }
+  
+  //This fixed the widget pictures being not centered inside the embed box, it was set to -4
+.eapp-photo-gallery-masonry-component.jsx-1882411283 {
+    margin: 0px !important;
+    justify-content: center;
+}  
+  .page-section.vertical-alignment--top:not(.content-collection):not(.gallery-section):not(.user-items-list-section):not(.section-height--custom):not(.editmode-changing-rowcount).section-height--large>.content-wrapper{
+    padding-bottom: 5vmax;
+  }
+}
+//Devices between 400 and 500
+@media (min-width: 400px) and (max-width: 500px) {
+  .eapp-photo-gallery-info-title {
+    font-family: 'SourceSans' !important;
+    font-size: 14px !important;
+    letter-spacing: 0.50rem !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+  }
+  .sqs-block {
+    position: relative;
+    height: auto;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+  
+  .fluid-engine .sqs-block {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+  .fe-6681c2ba6573f60943b48694{
+    --grid-gutter: 0 !important;
+    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
+  }
+  
+
+}
+
+
+@media (min-width: 500px) and (max-width: 750px) {
+  .eapp-photo-gallery-info-title {
+    font-family: 'SourceSans' !important;
+    font-size: 20px !important;
+    letter-spacing: 0.50rem !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+  }
+  .sqs-block {
+    position: relative;
+    height: auto;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+  
+  .fluid-engine .sqs-block {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+  .fe-6681c2ba6573f60943b48694{
+    --grid-gutter: 0 !important;
+    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
+  }
+  
+}
+
+@media (min-width: 750px) and (max-width: 1200px) {
+  .eapp-photo-gallery-info-title {
+    font-family: 'SourceSans' !important;
+    font-size: 25px !important;
+    letter-spacing: 0.50rem !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+  }
+  .sqs-block {
+    position: relative;
+    height: 100%;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+  
+  .fluid-engine .sqs-block {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+  .fe-6681c2ba6573f60943b48694{
+    --grid-gutter: 0 !important;
+    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
+  }
+  
+  #footer-sections {
+    margin-top: 15px;
+    position: relative;
+    z-index: 0;
+}
+  
+  .elfsight-app-dc92b0c3-8052-481d-923b-e1ab3ff3740e {
+        width: 100% !important;
+    	overflow: visible;
+    }
+}
+
+@media (min-width: 1200px) {
+  .eapp-photo-gallery-info-title {
+    font-family: 'SourceSans' !important;
+    font-size: 25px !important;
+    letter-spacing: 0.50rem !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+  }
+  .sqs-block {
+    position: relative;
+    height: 100%;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+  
+  .fluid-engine .sqs-block {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+  .fe-6681c2ba6573f60943b48694{
+    --grid-gutter: 0 !important;
+    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
+  }
+  
+  #footer-sections {
+    margin-top: 15px;
+    position: relative;
+    z-index: 0;
+}
+  
+  .elfsight-app-dc92b0c3-8052-481d-923b-e1ab3ff3740e {
+        width: 100% !important;
+    	overflow: visible;
+    }
+}
+
+
+//Hide call and text buttons if not on mobile
+@media (min-width:767px){
+  	
+  //Art Page Buttons
+  .fe-block-f4742ae5311e51d6768d{
+    display:none;
+  }
+  .fe-block-yui_3_17_2_1_1720903552322_12914{
+    display:none;
+  }
+  
+  //Audio Page Buttons
+  .fe-block-c45718a15f1e9f5ce977{
+    display:none;
+  }
+  .fe-block-0a83075d460324cd84c7{
+    display:none;
+  }
+  
+  //Lighting Page Buttons
+  .fe-block-yui_3_17_2_1_1718934013646_43597{
+    display: none;
+  }
+  
+  .fe-block-yui_3_17_2_1_1718934013646_44069{
+    display: none;
+  }
+  
+  //Tv Hanging Buttons
+  .fe-block-813a38310fd23a809bb1{
+    display: none;
+  }
+  
+  .fe-block-26a260eea22e6d3c6dc8{
+    display: none;
+  }
+  
+  //Theater buttons
+  .fe-block-yui_3_17_2_1_1719945907411_3917{
+    display: none;
+  }
+  
+  .fe-block-fe3f8c8413f30522413b{
+    display: none;
+  }
+  
+  //Networking Buttons
+  .fe-block-cb2ea117a52078988243{
+    display: none;
+  }
+  
+  .fe-block-b0f0b6f45929865892fa{
+    display: none;
+  }
+  
+  //Security Page Buttons
+  .fe-block-c7ad174ed998bee71b29{
+    display: none;
+  }
+  
+  .fe-block-da5356fe899ff19d803e{
+    display: none;
+  }
+  
+  //Electrical Page Buttons
+  .fe-block-c7610909f36b4be0ff28{
+    display: none;
+  }
+  
+  .fe-block-c852f4fe32fd608a80c7{
+    display: none;
+  }
+}
+
+//Code To Hide Text On Mobile
+@media (max-width:767px){
+  
+  //Audio Page
+  .fe-block-yui_3_17_2_1_1720909322611_5659{
+    display:none;
+  }
+  
+  //Lighting Page
+  .fe-block-yui_3_17_2_1_1720909322611_13917{
+    display: none;
+  }
+  
+  //Art Page
+  .fe-block-yui_3_17_2_1_1720909322611_20514{
+    display: none;
+  }
+  
+  //Tv Hanging
+  .fe-block-yui_3_17_2_1_1720909322611_24785{
+    display: none;
+  }
+  
+  //Theater Page
+  .fe-block-yui_3_17_2_1_1720909322611_28072{
+    display: none;
+  }
+  
+  //Networking Page
+  .fe-block-yui_3_17_2_1_1720983423785_3506{
+    display: none;
+  }
+  
+  //Security Page
+  .fe-block-yui_3_17_2_1_1720984763037_2809{
+    display: none;
+  }
+  
+  //Electrical Page
+  .fe-block-yui_3_17_2_1_1720986938120_2819{
+    display: none;
+  }
+}
+
+/*********Home Page CSS*************/
+
+//Add a Text Box To Header
