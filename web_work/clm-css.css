@@ -1,13 +1,15 @@
+/**All Elements With Novacento Font**/
+
 @font-face {
     font-family: 'Novacento Sans Free, Novacentowide';
 
        src: url('https://static1.squarespace.com/static/6439c48de787665ec69b7605/t/64ee12f0ea67262c2dd51e50/1693324016152/Novecentowide.otf');  
   }
 
+//Overriding Squarespace's Settings
 h1 {
   font-family: 'Novacento Sans Free, Novacentowide';
-  //font-size: 25px;
-  font-size: 1.5rem;
+  //font-size: 1.5rem; //I don't remember why I chose this font size for only this element
   }
 
 h2 {font-family: 'Novacento Sans Free, Novacentowide';}
@@ -25,6 +27,16 @@ h3 {font-family: 'Novacento Sans Free, Novacentowide';}
 .header-title-text a 
 {
 	font-family: 'Novacento Sans Free, Novacentowide';
+}
+
+//Heading for Services Widget
+.eapp-photo-gallery-photo-gallery-heading{
+  font-family: 'Novacento Sans Free, Novacentowide' !important;
+}
+
+//This is for the heading of the google review widget
+.DZBVr {
+  font-family: 'Novacento Sans Free, Novacentowide' !important;
 }
 
 @font-face {
@@ -81,7 +93,7 @@ p {font-family: 'SourceSans';
 //Settings for font on Service Widget Buttons
 .eapp-photo-gallery-photo-gallery-component{
   font-family: 'SourceSans';
-  letter-spacing: .50rem;
+  //letter-spacing: .50rem;
   text-transform: uppercase;
 }
 
@@ -99,7 +111,7 @@ p {font-family: 'SourceSans';
   --primary-button-font-letter-spacing: .125rem;
   --primary-button-font-font-size-value: 1.5rem;
   --sqs-site-gutter: 0px;
-  //--sqs-mobile-site-gutter: 0px;
+  --sqs-mobile-site-gutter: 0px;
   --body-font-letter-spacing: .125rem;
  
 }
@@ -139,8 +151,7 @@ html {
 //Devices with width 400 and below
 @media (max-width: 400px) {
   .eapp-photo-gallery-info-title {
-    font-family: 'SourceSans' !important;
-    font-size: 10px !important;
+    font-size: 6px !important;
     letter-spacing: 0.50rem !important;
     text-transform: uppercase !important;
     text-align: center !important;
