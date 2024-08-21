@@ -9,24 +9,39 @@
 //Overriding Squarespace's Settings
 h1 {
   font-family: 'Novacento Sans Free, Novacentowide';
-  //font-size: 1.5rem; //I don't remember why I chose this font size for only this element
-  }
-
+   }
 h2 {font-family: 'Novacento Sans Free, Novacentowide';}
 
 h3 {font-family: 'Novacento Sans Free, Novacentowide';}
 
-.header{
-  font-family: 'Novacento Sans Free, Novacentowide';
+//This fixes the spacing issue on the left and right side of the widget
+.eapp-photo-gallery-masonry-item-item {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 3px !important;
+  margin: 0px !important!;
 }
 
-.header-menu-nav-item{
-  font-family: 'Novacento Sans Free, Novacentowide';
+//Getting rid of extra header padding
+.header .header-announcement-bar-wrapper {
+    font-family: 'SourceSans';
+    letter-spacing: .50rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    width: auto;
+    box-sizing: border-box;
+    padding-top: .1vw;
+    padding-bottom: .1vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    pointer-events: auto;
 }
 
-.header-title-text a 
-{
-	font-family: 'Novacento Sans Free, Novacentowide';
+.header-nav-list {
+    display: flex;
+    //flex-wrap: nowrap;
 }
 
 //Heading for Services Widget
@@ -88,16 +103,19 @@ p {font-family: 'SourceSans';
 .eGyUKs .eapp-photo-gallery-photo-gallery-heading{
   font-family: 'Novacento Sans Free, Novacentowide';
   font-size: 2.2rem;
+  margin-bottom: 20px;
 }
 
 //Settings for font on Service Widget Buttons
 .eapp-photo-gallery-photo-gallery-component{
   font-family: 'SourceSans';
-  //letter-spacing: .50rem;
+  letter-spacing: .50rem;
   text-transform: uppercase;
+  text-align: center !important;
+  margin: auto !important;
 }
 
-
+//Tertiary Button is in header
 :root{
   --body-font-font-family: 'SourceSans';
   --heading-font-font-family: 'SourceSans';
@@ -106,6 +124,8 @@ p {font-family: 'SourceSans';
   --primary-button-font-font-family: 'SourceSans';
   --secondary-button-font-font-family: 'SourceSans';
   --tertiary-button-font-font-family: 'SourceSans';
+  --tertiary-button-font-text-transform: uppercase;
+  --tertiary-button-font-letter-spacing: .125rem;
   --primary-button-font-font-family: 'SourceSans';
   --primary-button-font-text-transform: uppercase;
   --primary-button-font-letter-spacing: .125rem;
@@ -119,11 +139,6 @@ p {font-family: 'SourceSans';
 html {
   font-family: 'SourceSans';
 }
-
-//Getting rid of extra header padding
-.header .header-announcement-bar-wrapper {
-        padding: 0vw;
-    }
 
 .list-item-content__button-wrapper {
     //width: 100%; /* Ensure the wrapper takes up full width */
@@ -151,11 +166,13 @@ html {
 //Devices with width 400 and below
 @media (max-width: 400px) {
   .eapp-photo-gallery-info-title {
-    font-size: 6px !important;
+    font-size: 9px !important;
     letter-spacing: 0.50rem !important;
     text-transform: uppercase !important;
-    text-align: center !important;
-    justify-content: center;
+    text-align: end !important;
+	width: 100% !important;
+    margin: 0 !important;
+    padding: 0px !important;
 
   }
   .sqs-block {
@@ -176,7 +193,7 @@ html {
 }
   .fe-6681c2ba6573f60943b48694{
     //--grid-gutter: 0 !important;
-    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
+    grid-template-rows: repeat(11, minmax(24px, auto)) !important;
     justify-content: center;
   }
   
@@ -457,6 +474,20 @@ html {
   }
 }
 
+//Button Hovering Effect Removed
+.tertiary-button-style-outline .sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .list-item[data-is-card-enabled="true"] .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .header-menu-cta .btn.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .tock-block div#Tock_widget_container > div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--tertiary:hover {
+    background-color: initial;
+    color: initial;
+    border-color: initial;
+    box-shadow: none;
+    transition: none;
+}
 /*********Home Page CSS*************/
 
 //Add a Text Box To Header
