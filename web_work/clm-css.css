@@ -6,54 +6,6 @@
        src: url('https://static1.squarespace.com/static/6439c48de787665ec69b7605/t/64ee12f0ea67262c2dd51e50/1693324016152/Novecentowide.otf');  
   }
 
-//Overriding Squarespace's Settings
-h1 {
-  font-family: 'Novacento Sans Free, Novacentowide';
-   }
-h2 {font-family: 'Novacento Sans Free, Novacentowide';}
-
-h3 {font-family: 'Novacento Sans Free, Novacentowide';}
-
-//This fixes the spacing issue on the left and right side of the widget
-.eapp-photo-gallery-masonry-item-item {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  padding: 3px !important;
-  margin: 0px !important!;
-}
-
-//Getting rid of extra header padding
-.header .header-announcement-bar-wrapper {
-    font-family: 'SourceSans';
-    letter-spacing: .50rem;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 10;
-    width: auto;
-    box-sizing: border-box;
-    padding-top: .1vw;
-    padding-bottom: .1vw;
-    padding-left: 0vw;
-    padding-right: 0vw;
-    pointer-events: auto;
-}
-
-.header-nav-list {
-    display: flex;
-    //flex-wrap: nowrap;
-}
-
-//Heading for Services Widget
-.eapp-photo-gallery-photo-gallery-heading{
-  font-family: 'Novacento Sans Free, Novacentowide' !important;
-}
-
-//This is for the heading of the google review widget
-.DZBVr {
-  font-family: 'Novacento Sans Free, Novacentowide' !important;
-}
-
 @font-face {
 
     font-family: 'SourceSans';
@@ -61,6 +13,13 @@ h3 {font-family: 'Novacento Sans Free, Novacentowide';}
        src: url('https://static1.squarespace.com/static/6439c48de787665ec69b7605/t/64ee12f50ad6f53440b24b95/1693324021780/SourceSans.ttf');
 
   }
+
+//Overriding Squarespace's Settings
+h1 {font-family: 'Novacento Sans Free, Novacentowide';}
+
+h2 {font-family: 'Novacento Sans Free, Novacentowide';}
+
+h3 {font-family: 'Novacento Sans Free, Novacentowide';}
 
 h4 {font-family: 'SourceSans';
     letter-spacing: .125rem;
@@ -72,89 +31,85 @@ p {font-family: 'SourceSans';
    text-transform: uppercase;
 	}
 
-/*Banner Links*/
-.portfolio-grid-basic .portfolio-title{
-  font-family: 'SourceSans';
-  letter-spacing: .125rem;
-  text-transform: uppercase;
+//Tertiary Button is in header
+:root{
+  --body-font-font-family: 'SourceSans';
+  --body-font-text-transform: uppercase;
+  --body-font-letter-spacing: .125rem;
+  --heading-font-font-family: 'SourceSans';
+  --heading-font-text-transform: uppercase;
+  --heading-font-letter-spacing: .125rem;
+  --meta-font-font-family: 'SourceSans';
+  --meta-font-text-transform: uppercase;
+  --meta-font-letter-spacing: .125rem;
+  --header-button-font-font-family: 'SourceSans';
+  --header-button-font-text-transform: uppercase;
+  --header-button-font-letter-spacing: .125rem;
+  --primary-button-font-font-family: 'SourceSans';
+  --primary-button-font-text-transform: uppercase;
+  --primary-button-font-letter-spacing: .125rem;
+  --secondary-button-font-font-family: 'SourceSans';
+  --secondary-button-font-text-transform: uppercase;
+  --secondary-button-font-letter-spacing: .125rem;
+  --tertiary-button-font-font-family: 'SourceSans';
+  --tertiary-button-font-text-transform: uppercase;
+  --tertiary-button-font-letter-spacing: .125rem;
 }
-  /*Project names in projects*/
+
+/**************Heading**************/
+
+//Getting rid of extra header padding
+.header .header-announcement-bar-wrapper {
+    padding-top: .1vw;
+    padding-bottom: .1vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+}
+
+//Header Navigation Font
 .header-nav-item{
   font-family: 'SourceSans';
   letter-spacing: .50rem;
   text-transform: uppercase;
 }
-  
-//.site-wrapper{
-  //font-family: 'SourceSans';
-  //letter-spacing: .125rem;
-  //text-transform: uppercase;
-//}
 
-//Carousel Font and Reviews Font 
-.list-item-content__description * {
-  font-family: 'SourceSans' !important;
-  letter-spacing: .50rem;
-  text-transform: uppercase;
-
+//Button Hovering Effect Removed
+.tertiary-button-style-outline .sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .list-item[data-is-card-enabled="true"] .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .header-menu-cta .btn.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .tock-block div#Tock_widget_container > div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary:hover,
+.tertiary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--tertiary:hover {
+    background-color: initial;
+    color: initial;
+    border-color: initial;
+    box-shadow: none;
+    transition: none;
 }
 
-//Settings for header on service widget
-.eGyUKs .eapp-photo-gallery-photo-gallery-heading{
-  font-family: 'Novacento Sans Free, Novacentowide';
-  font-size: 2.2rem;
+/**********Services Widget***********/
+
+//Heading for Services Widget
+.eapp-photo-gallery-photo-gallery-heading{
+  font-family: 'Novacento Sans Free, Novacentowide' !important;
+  font-size: 2.2rem !important;
+  margin: auto;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 //Settings for font on Service Widget Buttons
-.eapp-photo-gallery-photo-gallery-component{
-  font-family: 'SourceSans';
-  letter-spacing: .50rem;
+.eapp-photo-gallery-info-title{
+  font-family: 'SourceSans' !important;
+  letter-spacing: .125rem;
+  font-size: 1rem !important;
   text-transform: uppercase;
   text-align: center !important;
-  margin: auto !important;
+  margin: 0px !important;
+  padding: 0px
 }
 
-//Tertiary Button is in header
-:root{
-  --body-font-font-family: 'SourceSans';
-  --heading-font-font-family: 'SourceSans';
-  --meta-font-font-family: 'SourceSans';
-  --header-button-font-font-family: 'SourceSans';
-  --primary-button-font-font-family: 'SourceSans';
-  --secondary-button-font-font-family: 'SourceSans';
-  --tertiary-button-font-font-family: 'SourceSans';
-  --tertiary-button-font-text-transform: uppercase;
-  --tertiary-button-font-letter-spacing: .125rem;
-  --primary-button-font-font-family: 'SourceSans';
-  --primary-button-font-text-transform: uppercase;
-  --primary-button-font-letter-spacing: .125rem;
-  --primary-button-font-font-size-value: 1.5rem;
-  --sqs-site-gutter: 0px;
-  --sqs-mobile-site-gutter: 0px;
-  --body-font-letter-spacing: .125rem;
- 
-}
-
-html {
-  font-family: 'SourceSans';
-}
-
-.list-item-content__button-wrapper {
-    //width: 100%; /* Ensure the wrapper takes up full width */
-}
-
-.list-item-content__button-container {
-    //width: 100%; /* Ensure the container takes up full width */
-}
-
-//Code to change the button width of the carousel to match image width
-.list-item-content__button {
-    //display: block;
-    //width: 100%; /* Ensure the button takes up full width */
-    //text-align: center; /* Center the button text */
-    //margin: 0 auto; /* Center the button itself if needed */
-}
 //This fixes the elfsight widget
 //extra space!!!!
 //Hide Embed Block Info Bar
@@ -162,199 +117,25 @@ html {
   display: none!important;
 }
 
-/********Specific Media Targeting****/
-//Devices with width 400 and below
-@media (max-width: 400px) {
-  .eapp-photo-gallery-info-title {
-    font-size: 9px !important;
-    letter-spacing: 0.50rem !important;
-    text-transform: uppercase !important;
-    text-align: end !important;
-	width: 100% !important;
-    margin: 0 !important;
-    padding: 0px !important;
-
-  }
-  .sqs-block {
-    position: relative;
-    width: 100%;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    justify-content: center;
-}
-  
-  .fluid-engine .sqs-block {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 0 !important;
-    padding-bottom: 0px !important;
-    justify-content: center;
-}
-  .fe-6681c2ba6573f60943b48694{
-    //--grid-gutter: 0 !important;
-    grid-template-rows: repeat(11, minmax(24px, auto)) !important;
-    justify-content: center;
-  }
-  
-  .elfsight-app-dc92b0c3-8052-481d-923b-e1ab3ff3740e {
-        width: 100% !important;
-    	overflow: visible;
-    	justify-content: center;
-    }
-  
-  //This fixed the widget pictures being not centered inside the embed box, it was set to -4
-.eapp-photo-gallery-masonry-component.jsx-1882411283 {
-    margin: 0px !important;
-    justify-content: center;
-}  
-  .page-section.vertical-alignment--top:not(.content-collection):not(.gallery-section):not(.user-items-list-section):not(.section-height--custom):not(.editmode-changing-rowcount).section-height--large>.content-wrapper{
-    padding-bottom: 5vmax;
-  }
-}
-//Devices between 400 and 500
-@media (min-width: 400px) and (max-width: 500px) {
-  .eapp-photo-gallery-info-title {
-    font-family: 'SourceSans' !important;
-    font-size: 14px !important;
-    letter-spacing: 0.50rem !important;
-    text-transform: uppercase !important;
-    text-align: center !important;
-  }
-  .sqs-block {
-    position: relative;
-    height: auto;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-}
-  
-  .fluid-engine .sqs-block {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-  .fe-6681c2ba6573f60943b48694{
-    --grid-gutter: 0 !important;
-    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
-  }
-  
-
+//This fixes the spacing issue on the left and right side of the widget
+.eapp-photo-gallery-masonry-item-item {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 3px !important;
+  margin: 0px !important!;
 }
 
+/********Google Review Widget********/
 
-@media (min-width: 500px) and (max-width: 750px) {
-  .eapp-photo-gallery-info-title {
-    font-family: 'SourceSans' !important;
-    font-size: 20px !important;
-    letter-spacing: 0.50rem !important;
-    text-transform: uppercase !important;
-    text-align: center !important;
-  }
-  .sqs-block {
-    position: relative;
-    height: auto;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-}
-  
-  .fluid-engine .sqs-block {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-  .fe-6681c2ba6573f60943b48694{
-    --grid-gutter: 0 !important;
-    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
-  }
-  
+//This is for the heading of the google review widget
+.DZBVr {
+  font-family: 'Novacento Sans Free, Novacentowide' !important;
 }
 
-@media (min-width: 750px) and (max-width: 1200px) {
-  .eapp-photo-gallery-info-title {
-    font-family: 'SourceSans' !important;
-    font-size: 25px !important;
-    letter-spacing: 0.50rem !important;
-    text-transform: uppercase !important;
-    text-align: center !important;
-  }
-  .sqs-block {
-    position: relative;
-    height: 100%;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-}
-  
-  .fluid-engine .sqs-block {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-  .fe-6681c2ba6573f60943b48694{
-    --grid-gutter: 0 !important;
-    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
-  }
-  
-  #footer-sections {
-    margin-top: 15px;
-    position: relative;
-    z-index: 0;
-}
-  
-  .elfsight-app-dc92b0c3-8052-481d-923b-e1ab3ff3740e {
-        width: 100% !important;
-    	overflow: visible;
-    }
-}
+//For bigger versus smaller screens, do some REM font-size formatting. You don't have to do large granularity, just big versus small probably. Text on services widget is a little too big for mobile if desktop looks right, and vice versa. 
 
-@media (min-width: 1200px) {
-  .eapp-photo-gallery-info-title {
-    font-family: 'SourceSans' !important;
-    font-size: 25px !important;
-    letter-spacing: 0.50rem !important;
-    text-transform: uppercase !important;
-    text-align: center !important;
-  }
-  .sqs-block {
-    position: relative;
-    height: 100%;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-}
-  
-  .fluid-engine .sqs-block {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-  .fe-6681c2ba6573f60943b48694{
-    --grid-gutter: 0 !important;
-    grid-template-rows: repeat(15, minmax(24px, auto)) !important;
-  }
-  
-  #footer-sections {
-    margin-top: 15px;
-    position: relative;
-    z-index: 0;
-}
-  
-  .elfsight-app-dc92b0c3-8052-481d-923b-e1ab3ff3740e {
-        width: 100% !important;
-    	overflow: visible;
-    }
-}
-
+/********Call & Text Buttons********/
 
 //Hide call and text buttons if not on mobile
 @media (min-width:767px){
@@ -473,21 +254,3 @@ html {
     display: none;
   }
 }
-
-//Button Hovering Effect Removed
-.tertiary-button-style-outline .sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .list-item[data-is-card-enabled="true"] .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .header-menu-cta .btn.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .tock-block div#Tock_widget_container > div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--tertiary:hover {
-    background-color: initial;
-    color: initial;
-    border-color: initial;
-    box-shadow: none;
-    transition: none;
-}
-/*********Home Page CSS*************/
-
-//Add a Text Box To Header
