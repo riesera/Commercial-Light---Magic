@@ -54,6 +54,7 @@ p {font-family: 'SourceSans';
   --tertiary-button-font-font-family: 'SourceSans';
   --tertiary-button-font-text-transform: uppercase;
   --tertiary-button-font-letter-spacing: .125rem;
+  --primary-button-font-font-family: 'SourceSans';
 }
 
 /**************Heading**************/
@@ -133,13 +134,26 @@ p {font-family: 'SourceSans';
   font-family: 'Novacento Sans Free, Novacentowide' !important;
 }
 
-//For bigger versus smaller screens, do some REM font-size formatting. You don't have to do large granularity, just big versus small probably. Text on services widget is a little too big for mobile if desktop looks right, and vice versa. 
-
 /********Call & Text Buttons********/
 
 //Hide call and text buttons if not on mobile
 @media (min-width:767px){
   	
+  //Service Widget Buttons - Make font larger if on desktop
+  .eapp-photo-gallery-info-title{
+    font-size: 2.2rem !important;
+  }
+  
+  //Service Widget Heading
+  .eapp-photo-gallery-photo-gallery-heading{
+    font-size: 2.5rem !important;
+  }
+  
+  //Font Size of H3
+  h3{
+    font-size: 2.5rem !important;
+  }
+  
   //Art Page Buttons
   .fe-block-f4742ae5311e51d6768d{
     display:none;
