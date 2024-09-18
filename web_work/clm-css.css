@@ -61,10 +61,26 @@ p {font-family: 'SourceSans';
 
 //Getting rid of extra header padding
 .header .header-announcement-bar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: .1vw;
     padding-bottom: .1vw;
     padding-left: 0vw;
     padding-right: 0vw;
+}
+
+//Header logo
+.header-title-logo{
+  margin-right: auto;
+}
+
+.header-layout-nav-center .header-nav-list {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 0px;
+  //flex-wrap: nowrap;
 }
 
 //Header Navigation Font
@@ -74,7 +90,154 @@ p {font-family: 'SourceSans';
   text-transform: uppercase;
 }
 
-//Button Hovering Effect Removed
+/**********Button Settings**********/
+
+
+    
+//Button Settings For Elfsight Chat Button
+
+.fe-block-yui_3_17_2_1_1726510293929_47271{
+  
+}
+
+//Embed block
+.fe-block-yui_3_17_2_1_1726510293929_47271 .sqs-block{
+  border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: solid !important;
+  border-width: var(--primary-button-stroke) !important;
+  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  border-color: transparent !important;
+  flex: 1 !important;
+}
+
+//For the button animations
+.eKhpgV ::before, .eKhpgV ::after {
+  border-radius: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.ButtonBase__ButtonContainer-sc-p43e7i-3.dZtcLO.Bubble__BubbleComponent-sc-45ukei-0.fSQnsm{
+  box-shadow: none !important;
+   border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: none !important;
+  border-width: 0px !important;
+  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  border-color: transparent !important;
+  flex: 1 !important;
+}
+
+.ButtonBase__ButtonContainer-sc-p43e7i-3.dZtcLO.Bubble__BubbleComponent-sc-45ukei-0.eKhpgV{
+   border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: none !important;
+  border-width: 0px !important;
+  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  flex: 1 !important;
+}
+
+
+.fSQnsm ::before, .fSQnsm ::after {
+  border: none !important;
+   border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: none !important;
+  border-width: 0px !important;
+  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  border-color: transparent !important;
+  flex: 1 !important;
+}
+
+.ButtonBase__Overlay-sc-p43e7i-4.dVDZmT {
+     border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: none !important;
+  border-width: var(--primary-button-stroke) !important;
+  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  border-color: transparent !important;
+  flex: 1 !important;
+}
+
+
+//Button Hovering Effect Removed On Header Button
 .tertiary-button-style-outline .sqs-button-element--tertiary:hover,
 .tertiary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
 .tertiary-button-style-outline .list-item[data-is-card-enabled="true"] .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
