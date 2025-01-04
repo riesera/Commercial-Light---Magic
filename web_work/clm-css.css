@@ -90,189 +90,171 @@ p {font-family: 'SourceSans';
   text-transform: uppercase;
 }
 
-//Header Elfsight Button
-/*
-.elfsight-app-887eb81e-3a3b-4ca6-a9d6-2734f8f2ff83 {
-  display: none !important; /* Hidden by default 
-}
-
-.djmgww{
-  display: none !important;
-  //font-family: 'Novacento Sans Free, Novacentowide';
-  
-}
-
-.ButtonBase__Overlay-sc-p43e7i-4.dVDZmT{
-  display: none !important;
-}
-
-.kMPAkE{
-  //display: none !important;
-}
-
-.htrJWN{
-  display: none !important;
-}
-
-.kgPefg{
-  display: none;
-}
-*/
 /**********Button Settings**********/
 
-
-    
 //Button Settings For Elfsight Chat Button
-
-//Embed block
-
-.fe-block-yui_3_17_2_1_1726510293929_47271 .sqs-block .sqs-block-content{
-  border-radius: 0px !important; //Remove
-  line-height: normal !important; //Remove
-  border-style: solid !important; //Keep
-  border-width: var(--primary-button-stroke) !important; //Keep
-  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important; //Keep
-  font-family: var(--primary-button-font-font-family) !important; //Remove
-  font-style: var(--primary-button-font-font-style) !important; //Remove
-  font-weight: var(--primary-button-font-font-weight) !important; //Remove
-  letter-spacing: var(--primary-button-font-letter-spacing) !important; //Remove
-  text-transform: var(--primary-button-font-text-transform) !important; //Remove
-  box-sizing: border-box !important; //Keep
-  align-items: center !important; //Keep?
-  justify-content: center !important; //Keep?
-  padding-top: 0px !important; //Keep
-  padding-bottom: 0px !important; //Keep
-  height: 100% !important; //Remove
-  width: 100% !important; //Remove
-  display: flex !important; //Remove
-  color: var(--primaryButtonTextColor) !important; //Remove
-  background-color: var(--primaryButtonBackgroundColor) !important; //Keep
-  border-color: transparent !important; //Remove
-  flex: 1 !important; //Remove
-  overflow: hidden !important; //Remove
-}
-
-
-//For the button animations
-.eKhpgV ::before, .eKhpgV ::after {
-  border-radius: 0px !important; //Remove
+.fe-block-88548faa61be20d3d834 .sqs-block {
+  border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: none !important;
+  border-width: 0px !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  //align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
   height: 100% !important;
   width: 100% !important;
-}
-
-.ButtonBase__ButtonContainer-sc-p43e7i-3.dZtcLO.Bubble__BubbleComponent-sc-45ukei-0.fSQnsm{
-  box-shadow: none !important; //Keep
-  border-radius: 0px !important; //Remove
-  line-height: normal !important; //Remove
-  border-style: none !important; //Remove
-  border-width: 0px !important; //Remove
-  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important; //Remove
-  font-family: var(--primary-button-font-font-family) !important; //Remove
-  font-style: var(--primary-button-font-font-style) !important; //Remove
-  font-weight: var(--primary-button-font-font-weight) !important;
-  letter-spacing: var(--primary-button-font-letter-spacing) !important; //Remove
-  text-transform: var(--primary-button-font-text-transform) !important; //Remove
-  box-sizing: border-box !important; //Remove
-  align-items: center !important; //Remove
-  justify-content: center !important; //Remove
-  padding-top: 0px !important; //Remove
-  padding-bottom: 0px !important; //Remove
-  height: 100% !important; //Remove
-  width: 100% !important; //Remove
-  display: flex !important; //Remove
-  color: var(--primaryButtonTextColor) !important; //Keep
-  background-color: var(--primaryButtonBackgroundColor) !important; //Keep
-  border-color: transparent !important; //Remove
-  flex: 1 !important; //Remove
-}
-
-.ButtonBase__ButtonContainer-sc-p43e7i-3.dZtcLO.Bubble__BubbleComponent-sc-45ukei-0.eKhpgV{
-  border-radius: 0px !important; //Remove
-  line-height: normal !important; //Remove
-  border-style: none !important; //Remove
-  border-width: 0px !important; //Remove
-  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important; //Remove
-  font-family: var(--primary-button-font-font-family) !important; //Remove
-  font-style: var(--primary-button-font-font-style) !important; //Remove
-  font-weight: var(--primary-button-font-font-weight) !important;
-  letter-spacing: var(--primary-button-font-letter-spacing) !important; //Remove
-  text-transform: var(--primary-button-font-text-transform) !important; //Remove
-  box-sizing: border-box !important; //Remove
-  align-items: center !important; //Remove
-  justify-content: center !important; //Remove
-  padding-top: 0px !important; //Remove
-  padding-bottom: 0px !important; //Remove
-  height: 100% !important; //Remove
-  width: 100% !important; //Remove
-  display: flex !important; //Remove
-  color: var(--primaryButtonTextColor) !important; //Remove
-  background-color: transparent !important;
-  border-color: transparent !important; //Remove
-  flex: 1 !important; //Remove
-}
-
-
-.fSQnsm ::before, .fSQnsm ::after {
-  border: none !important;
-  border-radius: 0px !important; //Remove
-  line-height: normal !important; //Remove
-  border-style: none !important; //Remove
-  border-width: 0px !important; //Remove
-  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important; //Remove
-  font-family: var(--primary-button-font-font-family) !important; //Remove
-  font-style: var(--primary-button-font-font-style) !important; //Remove
-  font-weight: var(--primary-button-font-font-weight) !important;
-  letter-spacing: var(--primary-button-font-letter-spacing) !important; //Remove
-  text-transform: var(--primary-button-font-text-transform) !important; //Remove
-  box-sizing: border-box !important; //Remove
-  align-items: center !important; //Remove
-  justify-content: center !important; //Remove
-  padding-top: 0px !important; //Remove
-  padding-bottom: 0px !important; //Remove
-  height: 100% !important; //Remove
-  width: 100% !important; //Remove
-  display: flex !important; //Remove
-  color: var(--primaryButtonTextColor) !important; //Remove
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
   background-color: var(--primaryButtonBackgroundColor) !important;
-  border-color: transparent !important; //Remove
-  flex: 1 !important; //Remove
+  border-color: transparent !important;
+  border: none !important;
+  flex: 1 !important;
+  margin: 0px !important;
 }
 
-.flovcp{
+.fe-block-yui_3_17_2_1_1726510293929_47271 .sqs-block {
+  border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: none !important;
+  border-width: 0px !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  //align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  border-color: transparent !important;
   border: none !important;
+  flex: 1 !important;
+  margin: 0px !important;
+  //box-shadow: none !important;
+}
+
+//Button Old Lighting Page
+.ButtonBase__ButtonContainer-sc-p43e7i-3 .ButtonBase__ButtonContainer-sc-p43e7i-3{
+  box-shadow: none !important;
+  border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: solid !important;
+  border-width: 0px !important;
+  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  flex: 1 !important;
+  border: none !important;
+  outline: none !important;
+
+}
+
+.fe-block-24ecaba927ccf322b68c .sqs-block{
+ border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: none !important;
+  border-width: 0px !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  //align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  border-color: transparent !important;
+  border: none !important;
+  flex: 1 !important;
+  margin: 0px !important;
+}
+
+//New Lighting Page
+.ButtonBase__ButtonContainer-sc-p43e7i-3 {
+  
+  box-shadow: none !important;
+  border-radius: 0px !important;
+  line-height: normal !important;
+  border-style: solid !important;
+  border-width: 0px !important;
+  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important;
+  font-family: var(--primary-button-font-font-family) !important;
+  font-style: var(--primary-button-font-font-style) !important;
+  font-weight: var(--primary-button-font-font-weight) !important;
+  letter-spacing: var(--primary-button-font-letter-spacing) !important;
+  text-transform: var(--primary-button-font-text-transform) !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  color: var(--primaryButtonTextColor) !important;
+  background-color: var(--primaryButtonBackgroundColor) !important;
+  flex: 1 !important;
+  border: none !important;
+  outline: none !important;
+
+}
+
+.bZGUYE::before, .bZGUYE::after{
+  border: none !important;
+  outline: none !important;
+  border-radius: 0px !important;
   box-shadow: none !important;
 }
 
-.ButtonBase__Overlay-sc-p43e7i-4.dVDZmT {
-  border-radius: 0px !important; //Remove
-  line-height: normal !important; //Remove
-  border-style: none !important; //Remove
-  border-width: var(--primary-button-stroke) !important; //Remove
-  padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important; //Remove
-  font-family: var(--primary-button-font-font-family) !important; //Remove
-  font-style: var(--primary-button-font-font-style) !important; //Remove
-  font-weight: var(--primary-button-font-font-weight) !important; //Keep
-  letter-spacing: var(--primary-button-font-letter-spacing) !important; //Keep
-  text-transform: var(--primary-button-font-text-transform) !important; //Keep
-  box-sizing: border-box !important; //Remove
-  align-items: center !important; //Remove
-  justify-content: center !important; //Remove
-  padding-top: 0px !important; //Remove
-  padding-bottom: 0px !important; //Remove
-  height: 100% !important; //Remove
-  width: 100% !important; //Remove
-  display: flex !important; //Remove
-  color: var(--primaryButtonTextColor) !important; //Keep
-  background-color: var(--primaryButtonBackgroundColor) !important;//Remove
-  border-color: transparent !important; //Remove
-  flex: 1 !important; //Remove
+//Chat Window CSS
+//This makes the chat window visible
+//on top of the image above it
+.fe-block-yui_3_17_2_1_1727807104104_7358 {
+    z-index: 1 !important;
 }
 
-//Chat Notification Bubble
-.xWwIh{
-  right: 12px !important;
+.fupEQU {
+    z-index: 1000 !important; 
+    position: relative !important; 
 }
 
+//CSS for formatting of Chat Now text, so it doesn't disappear when screen is smaller
+.gWWXlB{
+  overflow: visible !important;
+
+}
 /**********Services Widget***********/
 
 //Heading for Services Widget
@@ -316,6 +298,18 @@ p {font-family: 'SourceSans';
 //This is for the heading of the google review widget
 .DZBVr {
   font-family: 'Novacento Sans Free, Novacentowide' !important;
+}
+
+/*Architectural Lighting Before/After Slider */
+
+//Heading
+.lcNjqJ{
+  font-family: 'Novacento Sans Free, Novacentowide' !important;
+  font-size: 2.2rem !important;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(231, 241, 255);
 }
 
 /********Call & Text Buttons********/
@@ -491,4 +485,5 @@ p {font-family: 'SourceSans';
   .fe-block-yui_3_17_2_1_1720986938120_2819{
     display: none;
   }
+}
 }
