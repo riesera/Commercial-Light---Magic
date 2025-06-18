@@ -1,4 +1,6 @@
+
 /**All Elements With Novacento Font**/
+
 
 @font-face {
     font-family: 'Novacento Sans Free, Novacentowide';
@@ -19,7 +21,8 @@ h1 {font-family: 'Novacento Sans Free, Novacentowide';}
 
 h2 {font-family: 'Novacento Sans Free, Novacentowide';}
 
-h3 {font-family: 'Novacento Sans Free, Novacentowide';}
+h3 {font-family: 'Novacento Sans Free, Novacentowide';
+	}
 
 h4 {font-family: 'SourceSans';
     letter-spacing: .125rem;
@@ -91,11 +94,16 @@ p {font-family: 'SourceSans';
 }
 
 /**********Button Settings**********/
+/*
+//Targeting any embed block with the all-in-one chat embedded in it
+.sqs-block.embed-block [class*="eapps-all-in-one-chat"]{
+  //border-radius: 0px !important;
+}
 
 //Button Settings For Elfsight Chat Button
 .fe-block-88548faa61be20d3d834 .sqs-block {
-  border-radius: 0px !important;
-  line-height: normal !important;
+  //border-radius: 0px !important;
+  //line-height: normal !important;
   border-style: none !important;
   border-width: 0px !important;
   font-family: var(--primary-button-font-font-family) !important;
@@ -255,6 +263,8 @@ p {font-family: 'SourceSans';
   overflow: visible !important;
 
 }
+*/
+
 /**********Services Widget***********/
 
 //Heading for Services Widget
@@ -282,6 +292,14 @@ p {font-family: 'SourceSans';
 //Hide Embed Block Info Bar
 .sqs-block .sqs-blockStatus, .sqs-block .removed-script {
   display: none!important;
+}
+
+.eapp-before-and-after-slider-slider-slider {
+  height: 100% !important;
+}
+
+[class^='Carousel__Item-sc'] {
+  min-height: 100% !important;
 }
 
 //This fixes the spacing issue on the left and right side of the widget
@@ -314,43 +332,7 @@ p {font-family: 'SourceSans';
 
 /********Call & Text Buttons********/
 
-//Shows and makes the button in the hamburger menu square, if the device is mobile
-@media (max-width: 767px){
-  .tertiary-button-style-outline .sqs-button-element--tertiary:not(:hover), .tertiary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:not(:hover), .tertiary-button-style-outline .list-item[data-is-card-enabled="true"] .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:not(:hover), .tertiary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--tertiary:not(:hover), .tertiary-button-style-outline .header-menu-cta .btn.sqs-button-element--tertiary:not(:hover), .tertiary-button-style-outline .tock-block div#Tock_widget_container > div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary:not(:hover), .tertiary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--tertiary:not(:hover){
-    background-color: var(--primaryButtonBackgroundColor) !important; 
-    border-radius: 0px !important;
-  }
-  
-  
-  //This is the hover effect, whether the hover has rounded corners or not
-  .tertiary-button-style-outline .sqs-button-element--tertiary, .tertiary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary, .tertiary-button-style-outline .list-item[data-is-card-enabled="true"] .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary, .tertiary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--tertiary, .tertiary-button-style-outline .header-menu-cta .btn.sqs-button-element--tertiary, .tertiary-button-style-outline .tock-block div#Tock_widget_container > div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary, .tertiary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--tertiary{
-    border-radius: 0px !important;
-  }
-  
-  .sqs-button-element--tertiary{
-    display: inline-block !important;
-  }
-  
-}
 
-@media (min-width: 768px){
-  
-  //Button Hovering Effect Removed On Header Button
-.tertiary-button-style-outline .sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .list-item .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .list-item[data-is-card-enabled="true"] .sqs-block-button-element.list-item-content__button.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .sqs-block-form .sqs-editable-button.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .header-menu-cta .btn.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .tock-block div#Tock_widget_container > div.TockWidgetWrapper .TockButton-blue.sqs-button-element--tertiary:hover,
-.tertiary-button-style-outline .sqs-modal-lightbox-content .sqs-button-element--tertiary:hover {
-    background-color: initial;
-    color: initial;
-    border-color: initial;
-    box-shadow: none;
-    transition: none;
-}
-  
-}
 
 //Hide call and text buttons if not on mobile
 @media (min-width:767px){
@@ -362,11 +344,6 @@ p {font-family: 'SourceSans';
   
   //Service Widget Heading
   .eapp-photo-gallery-photo-gallery-heading{
-    font-size: 2.5rem !important;
-  }
-  
-  //Font Size of H3
-  h3{
     font-size: 2.5rem !important;
   }
   
@@ -487,3 +464,115 @@ p {font-family: 'SourceSans';
   }
 }
 
+/***CSS to make images scale vertically as well as horizontally***/
+#block-yui_3_17_2_1_1737137400040_5951 img {
+    //width: 100% !important;
+    //height: auto !important;
+    //display: block !important;
+    //object-fit: none !important;
+}
+
+#block-yui_3_17_2_1_1737137400040_5951 .fluid-image-container{
+  //width: 100% !important;
+  //height: auto !important;
+  //min-height: 500px !important;
+  //overflow: visible !important;
+}
+
+/*CSS for Home Theater B/A Widget to take up entire Embed Container*/
+
+/*CSS for Electrical Form*/
+/* Style for the name fields container */
+#checkbox-febe82ad-a11a-423d-8a96-67af2bac9039 {
+    display: none;
+}
+
+#radio-d1162cf0-2c63-47ec-89ca-161765cb40f4{
+  display: none;
+}
+
+/**Alix Made Home Theater BA Slider**/
+
+
+.ba-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1vw;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  //aspect-ratio: 1/1;
+}
+
+.ba-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1 !important;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Wide slider spans both columns on desktop */
+.ba-slider--wide {
+  grid-column: span 2;
+  aspect-ratio: 2 / 1 !important;
+}
+
+.ba-slider img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.ba-before {
+  z-index: 2;
+  clip-path: inset(0 0 0 50%);
+}
+
+.ba-after {
+  z-index: 1;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: white;
+  z-index: 3;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.ba-handle::before {
+  content: '⇆';
+  color: white;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.2em 0.4em;
+  border-radius: 50%;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 768px) {
+  .ba-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .ba-slider *{
+    //user-select: none;
+    //aspect-ratio: 1 / 1 !important;
+  }
+
+  .ba-slider--wide {
+    grid-column: auto; /* Stop spanning 2 columns on mobile */
+    aspect-ratio: 1.5 / 1 !important; /* Optional: adjust as needed */
+  }
+}
